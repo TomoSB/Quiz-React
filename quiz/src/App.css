@@ -1,0 +1,22 @@
+.MainDiv {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.QuestionDiv {
+    background-color: aqua;
+    height: 500px;
+    width: 80%;
+}
+
+.RewardsDiv {
+    background-color: blue;
+    width: 20%;
+}
+
+.AnswerDiv {
+    width: 500px;
+    height: 200px;
+    background-color: red;
+}
