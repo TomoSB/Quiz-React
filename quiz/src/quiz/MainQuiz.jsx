@@ -1,6 +1,6 @@
-import QuestionDisplay from "./QuestionDisplay";
-import Answers from "./Answers";
 import Rewards from "./Rewards";
+import Answers from "./Answers";
+import QuestionDisplay from "./QuestionDisplay";
 
 export default function MainQuiz() {
   return (

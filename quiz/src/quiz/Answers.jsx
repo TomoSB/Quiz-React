@@ -1,5 +1,5 @@
 export default function Answers() {
-  console.log(" answers je pozvana");
+  //console.log(" answers je pozvana");
   return (
     <>
       <div className="AnswerDiv">

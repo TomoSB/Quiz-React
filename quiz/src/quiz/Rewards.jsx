@@ -1,5 +1,5 @@
 export default function Rewards() {
-  console.log(" rewards je pozvana");
+  // console.log(" rewards je pozvana");
   return (
     <>
       <div className="RewardsDiv">
