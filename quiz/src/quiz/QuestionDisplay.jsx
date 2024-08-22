@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 
-export default function QuestionDisplay({ quesitonnr }) {
-  return <div className="QuestionDiv">{quesitonnr}</div>;
+export default function QuestionDisplay({ questionnr }) {
+  console.log("Prikazujem pitanje:", questionnr);
+  return <div className="QuestionDiv">{questionnr}</div>;
 }
 
 QuestionDisplay.propTypes = {
-  quesitonnr: PropTypes.string.isRequired,
+  questionnr: PropTypes.string,
 };
