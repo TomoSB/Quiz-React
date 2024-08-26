@@ -1,29 +1,31 @@
-import { useEffect, useState } from "react";
+export default function Rewards() {
+  // Define your rewards in an array
+  const rewards = [
+    "1 MILLION",
+    "$500000",
+    "$250000",
+    "$125000",
+    "$64000",
+    "$32000",
+    "$16000",
+    "$8000",
+    "$4000",
+    "$2000",
+    "$1000",
+    "$500",
+    "$300",
+    "$200",
+    "$100",
+  ];
 
-export default function QuestionDisplay() {
-  const [questions, setQuestions] = useState([]);
-
-  useEffect(() => {
-    fetch("/question.json")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Učitani podaci:", data);
-        setQuestions(data.questions || []); // Postavi pitanja, proveri da li 'questions' postoji
-      })
-      .catch((error) => console.error("Greška pri učitavanju pitanja:", error));
-  }, []);
-
-  useEffect(() => {
-    if (questions.length > 0) {
-      console.log("Prvo pitanje:", questions[0].question);
-    }
-  }, [questions]); // Ova useEffect se pokreće kada se `questions` promeni
+  // Reverse the array
+  const reversedRewards = [...rewards].reverse();
 
   return (
-    <>
-      <div className="QuestionDiv">
-        {/* Ovdje možete dodati bilo kakav UI za prikaz pitanja */}
-      </div>
-    </>
+    <div className="RewardsDiv">
+      {reversedRewards.map((reward, index) => (
+        <p key={index}>{reward}</p>
+      ))}
+    </div>
   );
 }

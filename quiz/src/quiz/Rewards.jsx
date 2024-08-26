@@ -1,52 +1,34 @@
-export default function Rewards() {
-  // console.log(" rewards je pozvana");
+export default function Rewards({ correctAnswersCount }) {
+  // Definirajte nagrade u nizu
+  const rewards = [
+    "1 MILIJUN",
+    "$500000",
+    "$250000",
+    "$125000",
+    "$64000",
+    "$32000",
+    "$16000",
+    "$8000",
+    "$4000",
+    "$2000",
+    "$1000",
+    "$500",
+    "$300",
+    "$200",
+    "$100",
+  ];
+
   return (
-    <>
-      <div className="RewardsDiv">
-        <p>1 MILLION</p>
-        <p>
-          <span>$</span>500000
-        </p>
-        <p>
-          <span>$</span>250000
-        </p>
-        <p>
-          <span>$</span>125000
-        </p>
-        <p>
-          <span>$</span>64000
-        </p>
-        <p>
-          <span>$</span>32000
-        </p>
-        <p>
-          <span>$</span>16000
-        </p>
-        <p>
-          <span>$</span>8000
-        </p>
-        <p>
-          <span>$</span>4000
-        </p>
-        <p>
-          <span>$</span>2000
-        </p>
-        <p>
-          <span>$</span>1000
-        </p>
-        <p>
-          <span>$</span>500
-        </p>
-        <p>
-          <span>$</span>300
-        </p>
-        <p>
-          <span>$</span>200
-        </p>
-        <p>
-          <span>$</span>100
-        </p>
-      </div>
-    </>
+    <div className="RewardsDiv">
+      {rewards.map((reward, index) => {
+        // Izračunaj treba li dodijeliti klasu na temelju broja točnih odgovora
+        const isTrue = index >= rewards.length - correctAnswersCount;
+        return (
+          <p key={index} className={isTrue ? "True" : ""}>
+            {reward}
+          </p>
+        );
+      })}
+    </div>
   );
 }

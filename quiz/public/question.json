@@ -8,29 +8,29 @@
 
     {
       "question": "1 pitanje :",
-      "answer": ["ne", "ne", "ne", "da"],
+      "answer": ["da", "ne", "ne", "da"],
       "correctAns": 0
     },
 
     {
       "question": "2 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
+      "answer": ["da", "ne", "ne", "da"],
       "correctAns": 0
     },
     {
       "question": "3 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
+      "answer": ["da", "ne", "ne", "da"],
       "correctAns": 0
     },
 
     {
       "question": "4 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
+      "answer": ["da", "ne", "ne", "da"],
       "correctAns": 0
     },
     {
       "question": "5 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
+      "answer": ["da", "ne", "ne", "da"],
       "correctAns": 0
     },
     {
