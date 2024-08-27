@@ -39,3 +39,18 @@
     /* Promjena boje pozadine kao primer */
     font-weight: bold;
 }
+
+.GameOver {
+
+    width: 50%;
+    height: 500px;
+    z-index: 55;
+    background-color: blue;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 25%;
+    top: 20%;
+
+}

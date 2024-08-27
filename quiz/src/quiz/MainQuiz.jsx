@@ -2,13 +2,14 @@ import Rewards from "./Rewards";
 import Answers from "./Answers";
 import QuestionDisplay from "./QuestionDisplay";
 import { useEffect, useState } from "react";
+import Lost from "./Lost";
+import Milionare from "./Milionare";
 
 export default function MainQuiz() {
   const [questions, setQuestions] = useState([]);
-
   const [qCount, setQCount] = useState(0);
-
   const [correctAnswersCount, setCorrectAnswersCount] = useState(0); // Praćenje točnih odgovora
+  const [isLost, setIsLost] = useState(false); // Praćenje gubitka igre
 
   useEffect(() => {
     fetch("/question.json")
@@ -25,18 +26,27 @@ export default function MainQuiz() {
 
   const handleAnswerClick = (answer) => {
     if (answer === "da") {
-      setQCount((prevCount) => prevCount + 1); // Povećava qCount
       setCorrectAnswersCount((prevCount) => prevCount + 1); // Povećava count točnih odgovora
     } else {
-      console.log("Wrong answer :(");
+      console.log("Krivi odgovor :(");
+      setIsLost(true); // Postavi isLost na true ako je odgovor netočan
     }
+    setQCount((prevCount) => prevCount + 1); // Povećava qCount
   };
+
+  // Provjeri je li igra izgubljena ili je broj odgovorenih pitanja veći od 5
+  if (isLost) {
+    return <Lost />;
+  }
+  if (qCount > 5) {
+    return <Milionare />;
+  }
 
   return (
     <div className="MainDiv">
       {questions.length > 0 && (
         <QuestionDisplay
-          questionnr={questions[qCount]?.question || "No questions"}
+          questionnr={questions[qCount]?.question || "Nema pitanja"}
         />
       )}
       <Rewards correctAnswersCount={correctAnswersCount} />
