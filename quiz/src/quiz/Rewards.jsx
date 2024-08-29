@@ -18,6 +18,8 @@ export default function Rewards({ correctAnswersCount }) {
     "$100",
   ];
 
+  //uzeti rewards i prenjeti u lost!
+
   return (
     <div className="RewardsDiv">
       {rewards.map((reward, index) => {

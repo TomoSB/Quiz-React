@@ -1,56 +1,131 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1600df;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main Container */
 .MainDiv {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    background-color: #150735;
 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Question Section */
 .QuestionDiv {
-    background-color: aqua;
-    height: 500px;
+    background-color: #00001a;
     width: 80%;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+    color: whitesmoke;
+    padding-bottom: 0;
+    /* Ensure no padding at the bottom */
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    /* Reset margin-bottom */
 }
 
+/* Rewards Section */
 .RewardsDiv {
-    background-color: blue;
-    width: 20%;
+
+    background-color: #00001a;
+    border: 1px solid whitesmoke;
+    width: 19%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Answer Section */
 .AnswerDiv {
-    width: 500px;
-    height: 200px;
-    background-color: red;
+    width: 99.2%;
+    height: 150px;
+    background-color: #062066;
+    border: solid 1px whitesmoke;
+    margin-top: 0;
+    /* Remove the top margin */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+    gap: 1em;
+
+
+
+
+
+
+
+
 }
 
+.ans {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 45%;
+    text-align: center;
 
+
+}
+
+/* Status Classes */
 .False {
-    background-color: red;
+    background-color: #d32f2f;
 }
 
 .True {
-    background-color: green;
+    background-color: #388e3c;
+    color: white;
 }
 
-.Current {
-    background-color: orange;
-}
 
+
+/* Active Rewards */
 .RewardsDiv p.active {
-    background-color: yellow;
-    /* Promjena boje pozadine kao primer */
+    background-color: #ffca28;
+    color: #333;
     font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+/* Game Over Screen */
 .GameOver {
-
     width: 50%;
     height: 500px;
     z-index: 55;
-    background-color: blue;
+    background-color: #1565c0;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     left: 25%;
     top: 20%;
-
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }

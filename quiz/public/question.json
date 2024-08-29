@@ -72,6 +72,11 @@
       "question": "13 pitanje:",
       "answer": ["ne", "ne", "ne", "da"],
       "correctAns": 0
+    },
+    {
+      "question": "14 pitanje:",
+      "answer": ["daaa", "ne", "ne", "da"],
+      "correctAns": 0
     }
   ]
 }

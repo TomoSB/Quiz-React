@@ -36,9 +36,9 @@ export default function MainQuiz() {
 
   // Provjeri je li igra izgubljena ili je broj odgovorenih pitanja veći od 5
   if (isLost) {
-    return <Lost />;
+    return <Lost correctAnswersCount={correctAnswersCount} />;
   }
-  if (qCount > 5) {
+  if (qCount >= 15) {
     return <Milionare />;
   }
 
