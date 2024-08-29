@@ -5,16 +5,16 @@ export default function Answers({ ans0, ans1, ans2, ans3, onAnswerClick }) {
   return (
     <>
       <div className="AnswerDiv">
-        <div className="ans" onClick={() => onAnswerClick(ans0)}>
+        <div className="ans" onClick={() => onAnswerClick(0)}>
           {ans0}
         </div>
-        <div className="ans" onClick={() => onAnswerClick(ans1)}>
+        <div className="ans" onClick={() => onAnswerClick(1)}>
           {ans1}
         </div>
-        <div className="ans" onClick={() => onAnswerClick(ans2)}>
+        <div className="ans" onClick={() => onAnswerClick(2)}>
           {ans2}
         </div>
-        <div className="ans" onClick={() => onAnswerClick(ans3)}>
+        <div className="ans" onClick={() => onAnswerClick(3)}>
           {ans3}
         </div>
       </div>

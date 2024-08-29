@@ -24,9 +24,9 @@ export default function MainQuiz() {
   console.log("Trenutna pitanja:", questions); // Proveri vrednosti pitanja
   console.log("Trenutni qCount:", qCount); // Proveri vrednost qCount
 
-  const handleAnswerClick = (answer) => {
-    if (answer === "da") {
-      setCorrectAnswersCount((prevCount) => prevCount + 1); // Povećava count točnih odgovora
+  const handleAnswerClick = (selectedAnswerIndex) => {
+    if (selectedAnswerIndex === questions[qCount].correctAns) {
+      setCorrectAnswersCount((prevCount) => prevCount + 1); // Povećava count tačnih odgovora
     } else {
       console.log("Krivi odgovor :(");
       setIsLost(true); // Postavi isLost na true ako je odgovor netočan
@@ -34,7 +34,7 @@ export default function MainQuiz() {
     setQCount((prevCount) => prevCount + 1); // Povećava qCount
   };
 
-  // Provjeri je li igra izgubljena ili je broj odgovorenih pitanja veći od 5
+  // Provjeri je li igra izgubljena ili je broj odgovorenih pitanja veći od 14
   if (isLost) {
     return <Lost correctAnswersCount={correctAnswersCount} />;
   }
@@ -56,7 +56,7 @@ export default function MainQuiz() {
           ans1={questions[qCount]?.answer[1] || ""}
           ans2={questions[qCount]?.answer[2] || ""}
           ans3={questions[qCount]?.answer[3] || ""}
-          onAnswerClick={handleAnswerClick}
+          onAnswerClick={(index) => handleAnswerClick(index)} // Prosljeđuje indeks odgovora
         />
       )}
     </div>
