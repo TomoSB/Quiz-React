@@ -123,10 +123,18 @@ body {
 /* Media queries */
 
 /* Main Container */
+
+
 @media (max-width: 768px) {
+
+    .body {
+        height: fit-content;
+    }
+
     .MainDiv {
         display: flex;
         flex-direction: column;
+        height: 900px;
     }
 
     .MainDiv>*:nth-child(1) {
@@ -206,6 +214,7 @@ body {
 
     .GameOver {
         width: 90%;
+        height: 50%;
         left: 5%;
         padding: 15px;
     }
