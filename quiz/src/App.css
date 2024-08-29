@@ -67,15 +67,7 @@ body {
     color: white;
     border-radius: 8px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
-
     gap: 1em;
-
-
-
-
-
-
-
 
 }
 
@@ -84,8 +76,6 @@ body {
     border-radius: 5px;
     width: 45%;
     text-align: center;
-
-
 }
 
 /* Status Classes */
@@ -97,8 +87,6 @@ body {
     background-color: #388e3c;
     color: white;
 }
-
-
 
 /* Active Rewards */
 .RewardsDiv p.active {
@@ -128,4 +116,112 @@ body {
     text-align: center;
     flex-direction: column;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*-------------------------------------------------------------------*/
+
+/* Media queries */
+
+/* Main Container */
+@media (max-width: 768px) {
+    .MainDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MainDiv>*:nth-child(1) {
+        order: 2;
+    }
+
+    .MainDiv>*:nth-child(2) {
+        order: 1;
+        /* Rewards*/
+    }
+
+    .MainDiv>*:nth-child(3) {
+        order: 3;
+        /* Answers */
+    }
+}
+
+@media (max-width: 768px) {
+    .QuestionDiv {
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Rewards Section */
+@media (max-width: 768px) {
+    .RewardsDiv {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Answer Section */
+@media (max-width: 768px) {
+    .AnswerDiv {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .ans {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Game Over Screen */
+@media (max-width: 768px) {
+    .GameOver {
+        width: 80%;
+        left: 10%;
+        top: 10%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .MainDiv {
+        padding: 5px;
+    }
+
+    .QuestionDiv {
+        padding: 10px;
+    }
+
+    .RewardsDiv {
+        padding: 10px;
+    }
+
+    .AnswerDiv {
+        padding: 10px;
+    }
+
+    .GameOver {
+        width: 90%;
+        left: 5%;
+        padding: 15px;
+    }
+}
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .RewardsDiv p.active {
+        font-size: 16px;
+    }
+
+    .GameOver {
+        font-size: 18px;
+    }
 }

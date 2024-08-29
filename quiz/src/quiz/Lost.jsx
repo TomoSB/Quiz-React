@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Lost({ correctAnswersCount }) {
   // Definirajte nagrade u nizu
   const rewards = [
@@ -16,6 +18,7 @@ export default function Lost({ correctAnswersCount }) {
     "$300",
     "$200",
     "$100",
+    "0",
   ];
 
   // Izračunaj osvojeni iznos temeljen na broju točnih odgovora
@@ -28,3 +31,7 @@ export default function Lost({ correctAnswersCount }) {
     </div>
   );
 }
+
+Lost.propTypes = {
+  correctAnswersCount: PropTypes.number.isRequired, // correctAnswersCount is required and must be a number
+};

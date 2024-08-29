@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Rewards({ correctAnswersCount }) {
   // Definirajte nagrade u nizu
   const rewards = [
@@ -18,8 +20,6 @@ export default function Rewards({ correctAnswersCount }) {
     "$100",
   ];
 
-  //uzeti rewards i prenjeti u lost!
-
   return (
     <div className="RewardsDiv">
       {rewards.map((reward, index) => {
@@ -34,3 +34,7 @@ export default function Rewards({ correctAnswersCount }) {
     </div>
   );
 }
+
+Rewards.propTypes = {
+  correctAnswersCount: PropTypes.number.isRequired, // correctAnswersCount is required and must be a number
+};
