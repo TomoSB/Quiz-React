@@ -8,8 +8,8 @@ import Milionare from "./Milionare";
 export default function MainQuiz() {
   const [questions, setQuestions] = useState([]);
   const [qCount, setQCount] = useState(0);
-  const [correctAnswersCount, setCorrectAnswersCount] = useState(0); // Praćenje točnih odgovora
-  const [isLost, setIsLost] = useState(false); // Praćenje gubitka igre
+  const [correctAnswersCount, setCorrectAnswersCount] = useState(0); // correct anw. counter
+  const [isLost, setIsLost] = useState(false); // lost counter
 
   useEffect(() => {
     fetch("/question.json")
@@ -21,20 +21,19 @@ export default function MainQuiz() {
       .catch((error) => console.error("Greška pri učitavanju pitanja:", error));
   }, []);
 
-  console.log("Trenutna pitanja:", questions); // Proveri vrednosti pitanja
-  console.log("Trenutni qCount:", qCount); // Proveri vrednost qCount
+  //console.log("Trenutna pitanja:", questions);
+  //console.log("Trenutni qCount:", qCount);
 
   const handleAnswerClick = (selectedAnswerIndex) => {
     if (selectedAnswerIndex === questions[qCount].correctAns) {
-      setCorrectAnswersCount((prevCount) => prevCount + 1); // Povećava count tačnih odgovora
+      setCorrectAnswersCount((prevCount) => prevCount + 1);
     } else {
       console.log("Krivi odgovor :(");
       setIsLost(true); // Postavi isLost na true ako je odgovor netočan
     }
-    setQCount((prevCount) => prevCount + 1); // Povećava qCount
+    setQCount((prevCount) => prevCount + 1);
   };
 
-  // Provjeri je li igra izgubljena ili je broj odgovorenih pitanja veći od 14
   if (isLost) {
     return <Lost correctAnswersCount={correctAnswersCount} />;
   }

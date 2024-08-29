@@ -1,82 +1,99 @@
 {
   "questions": [
     {
-      "question": "0 pitanje :",
-      "answer": ["da", "ne", "ne", "ne"],
-      "correctAns": 0
-    },
-
-    {
-      "question": "1 pitanje :",
-      "answer": ["da", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-
-    {
-      "question": "2 pitanje:",
-      "answer": ["da", "ne", "ne", "da"],
+      "question": "In what children's game are participants chased by someone designated \"It\"?",
+      "answer": ["Tag", "Simon Says", "Charades", "Hopscotch"],
       "correctAns": 0
     },
     {
-      "question": "3 pitanje:",
-      "answer": ["da", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-
-    {
-      "question": "4 pitanje:",
-      "answer": ["da", "ne", "ne", "da"],
+      "question": "On a radio, stations are changed by using what control?",
+      "answer": ["Tuning", "Volume", "Bass", "Treble"],
       "correctAns": 0
     },
     {
-      "question": "5 pitanje:",
-      "answer": ["da", "ne", "ne", "da"],
+      "question": "Which material is most dense?",
+      "answer": ["Silver", "Styrofoam", "Butter", "Gold"],
+      "correctAns": 3
+    },
+    {
+      "question": "Which state in the United States is largest by area?",
+      "answer": ["Alaska", "California", "Texas", "Hawaii"],
       "correctAns": 0
     },
     {
-      "question": "6 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
+      "question": "What is Aurora Borealis commonly known as?",
+      "answer": [
+        "Fairy Dust",
+        "Northern Lights",
+        "Book of ages",
+        "Game of Thrones main character"
+      ],
+      "correctAns": 1
+    },
+    {
+      "question": "Galileo was an Italian astronomer who:",
+      "answer": [
+        "Developed the telescope",
+        "Discovered four satellites of Jupiter",
+        "Discovered that the movement of pendulum produces a regular time measurement",
+        "All of the above"
+      ],
+      "correctAns": 3
+    },
+    {
+      "question": "Exposure to sunlight helps a person improve his health because:",
+      "answer": [
+        "The infrared light kills bacteria in the body",
+        "Resistance power increases",
+        "The pigment cells in the skin get stimulated and produce a healthy tan",
+        "The ultraviolet rays convert skin oil into Vitamin D"
+      ],
+      "correctAns": 3
+    },
+    {
+      "question": "Sir Thomas Fearnley Cup is awarded to:",
+      "answer": [
+        "A club or a local sport association for remarkable achievements",
+        "Amateur athlete, not necessarily an Olympian",
+        "National Olympic Committee for outstanding work",
+        "None of the above"
+      ],
       "correctAns": 0
     },
     {
-      "question": "7 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
+      "question": "Oscar Awards were instituted in",
+      "answer": ["1968", "1929", "1901", "1965"],
+      "correctAns": 1
+    },
+    {
+      "question": "When did Margaret Thatcher became the first female Prime Minister of Britain?",
+      "answer": ["1998", "1989", "1979", "1800"],
+      "correctAns": 2
+    },
+    {
+      "question": "When is the International Workers' Day?",
+      "answer": ["15th April", "12th December", "1st May", "1st August"],
+      "correctAns": 2
+    },
+    {
+      "question": "When did China test their first atomic device?",
+      "answer": ["1962", "1963", "1964", "1965"],
+      "correctAns": 2
+    },
+    {
+      "question": "When did Commander Robert Peary discover the North Pole?",
+      "answer": ["1904", "1905", "1908", "1909"],
+      "correctAns": 3
+    },
+    {
+      "question": "What is the population density of Kerala?",
+      "answer": ["819/sq. km", "602/sq. km", "415/sq. km", "500/sq. km"],
       "correctAns": 0
     },
     {
-      "question": "8 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-    {
-      "question": "9 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-    {
-      "question": "10 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-    {
-      "question": "11 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-    {
-      "question": "12 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-    {
-      "question": "13 pitanje:",
-      "answer": ["ne", "ne", "ne", "da"],
-      "correctAns": 0
-    },
-    {
-      "question": "14 pitanje:",
-      "answer": ["daaa", "ne", "ne", "da"],
-      "correctAns": 0
+      "question": "What is the range of missile 'Akash'?",
+      "answer": ["4 km", "25 km", "500 m to 9 km", "150 km"],
+      "correctAns": 1
     }
   ]
 }
